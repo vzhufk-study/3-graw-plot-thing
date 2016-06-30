@@ -32,8 +32,8 @@ void MainWindow::on_pushButton_clicked()
     QVector<double> x(time.size()), y(amount.size());
     int i = 0;
     while(!amount.empty()) {
-        x[i] = time.front();
-        y[i] = amount.front();
+        x[i] = amount.front();
+        y[i] = time.front();
 
         if(time.front() > max_time){
             max_time = time.front();
